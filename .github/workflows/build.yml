@@ -1,4 +1,4 @@
-name: Build and deploy to Kuroco front.
+name: Build and deploy to Kuroco front
 on:
   push:
     branches:
@@ -19,7 +19,7 @@ jobs:
     steps:
       - name: "test"
         run: |
-          ${{ github.workflow }}-preview_deploy-${{ github.event.issue.number }}
+          echo "${{ github.workflow }}-preview_deploy-${{ github.event.issue.number }}"
       - name: "Get branch name and sha"
         id: get_branch
         run: |
@@ -76,7 +76,7 @@ jobs:
     steps:
       - name: "test"
         run: |
-          ${{ github.workflow }}-prod_deploy-${{ github.ref }}
+          echo "${{ github.workflow }}-prod_deploy-${{ github.ref }}"
       - name: Checkout Repo
         uses: actions/checkout@v4
       - name: Use Node.js
