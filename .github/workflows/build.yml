@@ -17,9 +17,7 @@ jobs:
       - name: "test"
         run: |
           echo ${{ github.ref }}
-          echo ${{ github.event.issue.pull_request.number }}
           echo ${{ github.event.issue.number }}
-          echo ${{ github.event.pull_request.number }}
       - name: "Get branch name and sha"
         id: get_branch
         run: |
