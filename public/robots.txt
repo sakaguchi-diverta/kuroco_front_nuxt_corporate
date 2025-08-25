@@ -1,0 +1,2 @@
+User-agent: Kuroco-SiteSearchBot
+Allow: /
