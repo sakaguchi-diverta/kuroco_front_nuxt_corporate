@@ -1,2 +1,2 @@
-User-agent: Kuroco-SiteSearchBot
+User-agent: GPTBot
 Allow: /
